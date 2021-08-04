@@ -18,7 +18,7 @@ const SearchContainer = styled(View)`
 
 const RestaurantListContainer = styled(View)`
   flex: 1;
-  padding: ${(props) => props.theme.sizes[3]};
+  padding: ${(props) => props.theme.space[3]};
   background: ${(props) => props.theme.colors.brand.primary};
 `;
 
