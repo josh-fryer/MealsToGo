@@ -5,6 +5,7 @@ import { ThemeProvider } from "styled-components/native";
 import {
   useFonts as useOswald,
   Oswald_400Regular,
+  Oswald_500Medium,
 } from "@expo-google-fonts/oswald";
 import { useFonts as useLato, Lato_400Regular } from "@expo-google-fonts/lato";
 
@@ -14,6 +15,7 @@ import { RestaurantsScreen } from "./src/features/restaurants/screens/restaurant
 export default function App() {
   const [oswaldLoaded] = useOswald({
     Oswald_400Regular,
+    Oswald_500Medium,
   });
 
   const [latoLoaded] = useLato({
