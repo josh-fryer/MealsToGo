@@ -1,16 +1,10 @@
 import React from "react";
 import styled from "styled-components/native";
+import { FlatList, View } from "react-native";
 import { Searchbar } from "react-native-paper";
-import { SafeAreaView, FlatList, StatusBar, View } from "react-native";
 import { Spacer } from "../../../components/spacer/spacer.component";
 import { RestaurantInfoCard } from "../Components/restaurant-info-card.component";
-import { isTemplateMiddle } from "typescript";
-
-const SafeArea = styled(SafeAreaView)`
-  flex: 1;
-  /* if there is statusbar height then return this or returns no value */
-  ${StatusBar.currentHeight && `margin-top: ${StatusBar.currentHeight}px`};
-`;
+import { SafeArea } from "../../../components/utils/safe-area.component";
 
 const SearchContainer = styled(View)`
   padding: ${(props) => props.theme.space[3]};
